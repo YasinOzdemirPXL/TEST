@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    line-height: 1.6;
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    display: block;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 1rem;
+}
+
+#navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+header {
+    color: white;
+}
+
+#heroBanner {
+    background-image: url(assets/hero-background.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 45vh;
+
+    /*Hoe je de text centreert*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+#koopOpties {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 50px;
+}
+
+main article {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+main article h3,
+main article p {
+    padding: 1rem;
+}
+
+
+.prijs {
+    font-size: 1.2rem;
+    color: #27ae60;
+}
+
+.extras button,
+.badge {
+    color: white;
+}
+
+.extras button {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.extras button:hover {
+    cursor: pointer;
+}
+
+.extras p {
+    text-align: right;
+    margin-right: 16px;
+}
+
+.extras span {
+    background-image: linear-gradient(135deg, coral 0%, red 100%);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;   
+}
+
+footer{
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    margin: 0 auto;
+}
+
