@@ -10,7 +10,7 @@ body {
     font-family: "Segoe UI", sans-serif;
     color: #333;
     background-color: #f4f4f4;
-    display: block;
+    /* display: block; overbodig */
 }
 
 nav {
@@ -49,20 +49,17 @@ nav ul a:hover {
 }
 
 header {
-    color: white;
-}
-
-#heroBanner {
     background-image: url(assets/hero-background.jpg);
-    background-size: 100%;
-    background-position: center;
+    background-size: cover;
+    background-position: center center;
     height: 45vh;
 
     /*Hoe je de text centreert*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    color: white;
 }
 
 main h2 {
@@ -71,7 +68,7 @@ main h2 {
     font-size: 2rem;
 }
 
-#koopOpties {
+.cards-container {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -83,45 +80,45 @@ main h2 {
 main article {
     background-color: white;
     border: 1px solid #ddd;
+    position: relative; /*nodig om badge te kunnen positioneren */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
 }
-
-main article h3,
-main article p {
-    padding: 1rem;
-}
-
 
 .prijs {
     font-size: 1.2rem;
+}
+
+.prijs span {
     color: #27ae60;
 }
 
-.extras button,
+.button,
 .badge {
     color: white;
 }
 
-.extras button {
+.button {
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    margin-top: 1rem;
-    margin-left: 1rem;
+
     padding: 0.75rem 1.25rem;
     border: 1px black solid;
     border-radius: 5px;
 }
 
-.extras button:hover {
+.button:hover {
     cursor: pointer;
 }
 
-.extras p {
-    text-align: right;
-    margin-right: 16px;
-}
-
-.extras span {
+.badge {
     background-image: linear-gradient(135deg, coral 0%, red 100%);
     padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
     border-radius: 25px;   
 }
 
